@@ -1,2 +1,5 @@
 base/
 .env
+demo-rag/
+__pycache__/
+test.py
