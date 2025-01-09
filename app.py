@@ -10,6 +10,11 @@ from dotenv import load_dotenv, dotenv_values
 from langchain_community.document_loaders import PyMuPDFLoader
 import tempfile 
 import uuid
+import sqlite3
+__import__('pysqlite3')
+import sys
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 load_dotenv()
 
