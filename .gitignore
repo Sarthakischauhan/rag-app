@@ -1,5 +1,7 @@
 base/
 .env
+rag-vectors/
 demo-rag/
 __pycache__/
 test.py
+*.pdf

@@ -1,5 +1,4 @@
 from langchain_openai import OpenAIEmbeddings
-
 class CustomOpenAIEmbeddings(OpenAIEmbeddings):
 
     def __init__(self, openai_api_key, *args, **kwargs):
@@ -9,4 +8,4 @@ class CustomOpenAIEmbeddings(OpenAIEmbeddings):
         return super().embed_documents(texts) 
 
     def __call__(self, input):
-        return self._embed_documents(input)    
+        return self._embed_documents(input)
